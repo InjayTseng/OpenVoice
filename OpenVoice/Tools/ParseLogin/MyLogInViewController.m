@@ -46,6 +46,13 @@
     [self.logInView.signUpButton setTitle:@"lg" forState:UIControlStateNormal];
     [self.logInView.signUpButton setTitle:@"lg" forState:UIControlStateHighlighted];
     
+    //Password forgotten
+
+    [self.logInView.passwordForgottenButton setBackgroundImage:[UIImage imageNamed:@"Signup.png"] forState:UIControlStateNormal];
+    [self.logInView.passwordForgottenButton setBackgroundImage:[UIImage imageNamed:@"SignupDown.png"] forState:UIControlStateHighlighted];
+    [self.logInView.passwordForgottenButton setTitle:@"fg" forState:UIControlStateNormal];
+    [self.logInView.passwordForgottenButton setTitle:@"fg" forState:UIControlStateHighlighted];
+    
     // Add login field background
     fieldsBackground = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LoginFieldBG.png"]];
     [self.logInView addSubview:self.fieldsBackground];
