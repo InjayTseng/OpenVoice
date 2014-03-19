@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#define OpenWeatherPage() [[NSNotificationCenter defaultCenter] postNotificationName:@"toWeatherWebPage" object:nil]
 
 @interface ViewController : UIViewController
 

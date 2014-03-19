@@ -16,7 +16,7 @@
 
 -(void)awakeFromNib{
 
-    self.leftPanel = [self.storyboard instantiateViewControllerWithIdentifier:@"SettingsTableViewController"];
+    self.leftPanel = [self.storyboard instantiateViewControllerWithIdentifier:@"SettingsContainerViewController"];
 	self.centerPanel = [self.storyboard instantiateViewControllerWithIdentifier:@"StartNavigationController"];
 }
 

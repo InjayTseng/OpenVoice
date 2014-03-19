@@ -7,11 +7,15 @@
 //
 
 #import "AppDelegate.h"
+#import "ParsePrivateKey.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [Parse setApplicationId:parseApplicationKey
+                  clientKey:parseClientKey];
+    [PFFacebookUtils initializeFacebook];
     // Override point for customization after application launch.
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:39./255. green:197/255. blue:103./255. alpha:1.]];
     [[UIBarButtonItem appearance] setTintColor:[UIColor orangeColor]];

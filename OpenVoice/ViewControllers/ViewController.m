@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "DAPagesContainer.h"
+#import "WebViewController.h"
+
 
 @interface ViewController ()
 @property (strong, nonatomic) DAPagesContainer *pagesContainer;
@@ -19,6 +21,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(toWeatherWebPage) name:@"toWeatherWebPage" object:nil];
+    
     self.navigationItem.title = @"OpenVoice";
     self.pagesContainer = [[DAPagesContainer alloc] init];
     [self.pagesContainer willMoveToParentViewController:self];
@@ -36,8 +40,16 @@
     self.pagesContainer.viewControllers = @[mapViewController,listViewController];
 
     
-    
 }
+
+-(void)toWeatherWebPage{
+    
+    WebViewController* vc = [self.storyboard instantiateViewControllerWithIdentifier:@"WebViewController"];
+    [vc setUrlText:@"http://weather.json.tw"];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
 {
     [self.pagesContainer updateLayoutForNewOrientation:toInterfaceOrientation];

@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F700FC3818D82E190025AE51 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F700FC3718D82E190025AE51 /* FacebookSDK.framework */; };
+		F700FC3A18D82E350025AE51 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F700FC3918D82E350025AE51 /* Parse.framework */; };
+		F700FC3D18D82E4F0025AE51 /* DTParse.m in Sources */ = {isa = PBXBuildFile; fileRef = F700FC3C18D82E4F0025AE51 /* DTParse.m */; };
+		F700FC3F18D82E970025AE51 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F700FC3E18D82E970025AE51 /* AudioToolbox.framework */; };
+		F700FC4118D82E9F0025AE51 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F700FC4018D82E9F0025AE51 /* CFNetwork.framework */; };
+		F700FC4318D82EAC0025AE51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F700FC4218D82EAC0025AE51 /* CoreLocation.framework */; };
+		F700FC4518D82EB40025AE51 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F700FC4418D82EB40025AE51 /* libz.1.1.3.dylib */; };
+		F700FC4718D82EBA0025AE51 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F700FC4618D82EBA0025AE51 /* MobileCoreServices.framework */; };
+		F700FC4918D82EC00025AE51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F700FC4818D82EC00025AE51 /* QuartzCore.framework */; };
+		F700FC4B18D82EC60025AE51 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F700FC4A18D82EC60025AE51 /* Security.framework */; };
+		F700FC4D18D82ED00025AE51 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F700FC4C18D82ED00025AE51 /* SystemConfiguration.framework */; };
+		F700FC5018D82FDF0025AE51 /* OData.m in Sources */ = {isa = PBXBuildFile; fileRef = F700FC4F18D82FDF0025AE51 /* OData.m */; };
 		F74220AD18D6D50700DB34EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74220AC18D6D50700DB34EF /* Foundation.framework */; };
 		F74220AF18D6D50700DB34EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74220AE18D6D50700DB34EF /* CoreGraphics.framework */; };
 		F74220B118D6D50700DB34EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74220B018D6D50700DB34EF /* UIKit.framework */; };
@@ -15,11 +27,6 @@
 		F74220BD18D6D50700DB34EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F74220BC18D6D50700DB34EF /* AppDelegate.m */; };
 		F74220C018D6D50700DB34EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F74220BE18D6D50700DB34EF /* Main.storyboard */; };
 		F74220C518D6D50700DB34EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F74220C418D6D50700DB34EF /* Images.xcassets */; };
-		F74220CC18D6D50700DB34EF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74220CB18D6D50700DB34EF /* XCTest.framework */; };
-		F74220CD18D6D50700DB34EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74220AC18D6D50700DB34EF /* Foundation.framework */; };
-		F74220CE18D6D50700DB34EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F74220B018D6D50700DB34EF /* UIKit.framework */; };
-		F74220D618D6D50700DB34EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F74220D418D6D50700DB34EF /* InfoPlist.strings */; };
-		F74220D818D6D50700DB34EF /* OpenVoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F74220D718D6D50700DB34EF /* OpenVoiceTests.m */; };
 		F74220F018D6D58600DB34EF /* beaver.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F74220EC18D6D58600DB34EF /* beaver.jpg */; };
 		F74220F118D6D58600DB34EF /* buckDeer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F74220ED18D6D58600DB34EF /* buckDeer.jpg */; };
 		F74220F218D6D58600DB34EF /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F74220EE18D6D58600DB34EF /* cat.jpg */; };
@@ -58,19 +65,28 @@
 		F77B03A418D708C90031B8DB /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F77B039618D708C90031B8DB /* UIImageView+WebCache.m */; };
 		F77B03A818D708D30031B8DB /* ELHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F77B03A718D708D30031B8DB /* ELHeaderView.m */; };
 		F77B03AE18D70F670031B8DB /* SettingsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77B03AD18D70F670031B8DB /* SettingsTableViewController.m */; };
+		F77D8B9D18D953A4008A314F /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77D8B9C18D953A4008A314F /* WebViewController.m */; };
+		F77D8BAB18D9A5B0008A314F /* MyLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77D8BA518D9A5B0008A314F /* MyLogInViewController.m */; };
+		F77D8BAC18D9A5B0008A314F /* MySignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77D8BA718D9A5B0008A314F /* MySignUpViewController.m */; };
+		F77D8BAD18D9A5B0008A314F /* SubclassConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F77D8BA918D9A5B0008A314F /* SubclassConfigViewController.m */; };
+		F77D8BAE18D9A5B0008A314F /* SubclassConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77D8BAA18D9A5B0008A314F /* SubclassConfigViewController.xib */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		F74220CF18D6D50700DB34EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F74220A118D6D50700DB34EF /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F74220A818D6D50700DB34EF;
-			remoteInfo = OpenVoice;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		F700FC3718D82E190025AE51 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		F700FC3918D82E350025AE51 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		F700FC3B18D82E4F0025AE51 /* DTParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTParse.h; sourceTree = "<group>"; };
+		F700FC3C18D82E4F0025AE51 /* DTParse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTParse.m; sourceTree = "<group>"; };
+		F700FC3E18D82E970025AE51 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F700FC4018D82E9F0025AE51 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F700FC4218D82EAC0025AE51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F700FC4418D82EB40025AE51 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		F700FC4618D82EBA0025AE51 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F700FC4818D82EC00025AE51 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F700FC4A18D82EC60025AE51 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F700FC4C18D82ED00025AE51 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F700FC4E18D82FDF0025AE51 /* OData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OData.h; sourceTree = "<group>"; };
+		F700FC4F18D82FDF0025AE51 /* OData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OData.m; sourceTree = "<group>"; };
 		F74220A918D6D50700DB34EF /* OpenVoice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenVoice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74220AC18D6D50700DB34EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F74220AE18D6D50700DB34EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -83,11 +99,7 @@
 		F74220BC18D6D50700DB34EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F74220BF18D6D50700DB34EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F74220C418D6D50700DB34EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F74220CA18D6D50700DB34EF /* OpenVoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenVoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F74220CB18D6D50700DB34EF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		F74220D318D6D50700DB34EF /* OpenVoiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OpenVoiceTests-Info.plist"; sourceTree = "<group>"; };
-		F74220D518D6D50700DB34EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F74220D718D6D50700DB34EF /* OpenVoiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OpenVoiceTests.m; sourceTree = "<group>"; };
 		F74220EC18D6D58600DB34EF /* beaver.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = beaver.jpg; sourceTree = "<group>"; };
 		F74220ED18D6D58600DB34EF /* buckDeer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = buckDeer.jpg; sourceTree = "<group>"; };
 		F74220EE18D6D58600DB34EF /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
@@ -151,6 +163,16 @@
 		F77B03A718D708D30031B8DB /* ELHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELHeaderView.m; sourceTree = "<group>"; };
 		F77B03AC18D70F670031B8DB /* SettingsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsTableViewController.h; sourceTree = "<group>"; };
 		F77B03AD18D70F670031B8DB /* SettingsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsTableViewController.m; sourceTree = "<group>"; };
+		F77D8B9B18D953A4008A314F /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		F77D8B9C18D953A4008A314F /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		F77D8BA418D9A5B0008A314F /* MyLogInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLogInViewController.h; sourceTree = "<group>"; };
+		F77D8BA518D9A5B0008A314F /* MyLogInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLogInViewController.m; sourceTree = "<group>"; };
+		F77D8BA618D9A5B0008A314F /* MySignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySignUpViewController.h; sourceTree = "<group>"; };
+		F77D8BA718D9A5B0008A314F /* MySignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySignUpViewController.m; sourceTree = "<group>"; };
+		F77D8BA818D9A5B0008A314F /* SubclassConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubclassConfigViewController.h; sourceTree = "<group>"; };
+		F77D8BA918D9A5B0008A314F /* SubclassConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubclassConfigViewController.m; sourceTree = "<group>"; };
+		F77D8BAA18D9A5B0008A314F /* SubclassConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SubclassConfigViewController.xib; sourceTree = "<group>"; };
+		F77D8BAF18D9ACE6008A314F /* ParsePrivateKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParsePrivateKey.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,20 +180,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F77B034518D6D8190031B8DB /* MapKit.framework in Frameworks */,
+				F700FC4D18D82ED00025AE51 /* SystemConfiguration.framework in Frameworks */,
+				F700FC4B18D82EC60025AE51 /* Security.framework in Frameworks */,
+				F700FC4918D82EC00025AE51 /* QuartzCore.framework in Frameworks */,
+				F700FC4718D82EBA0025AE51 /* MobileCoreServices.framework in Frameworks */,
+				F700FC4518D82EB40025AE51 /* libz.1.1.3.dylib in Frameworks */,
+				F700FC4318D82EAC0025AE51 /* CoreLocation.framework in Frameworks */,
 				F74220AF18D6D50700DB34EF /* CoreGraphics.framework in Frameworks */,
+				F700FC4118D82E9F0025AE51 /* CFNetwork.framework in Frameworks */,
+				F700FC3F18D82E970025AE51 /* AudioToolbox.framework in Frameworks */,
+				F77B034518D6D8190031B8DB /* MapKit.framework in Frameworks */,
+				F700FC3818D82E190025AE51 /* FacebookSDK.framework in Frameworks */,
 				F74220B118D6D50700DB34EF /* UIKit.framework in Frameworks */,
+				F700FC3A18D82E350025AE51 /* Parse.framework in Frameworks */,
 				F74220AD18D6D50700DB34EF /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F74220C718D6D50700DB34EF /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F74220CC18D6D50700DB34EF /* XCTest.framework in Frameworks */,
-				F74220CE18D6D50700DB34EF /* UIKit.framework in Frameworks */,
-				F74220CD18D6D50700DB34EF /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -182,8 +204,8 @@
 			isa = PBXGroup;
 			children = (
 				F74220B218D6D50700DB34EF /* OpenVoice */,
+				F74220EB18D6D58600DB34EF /* images */,
 				F77B034618D6E0170031B8DB /* Tools */,
-				F74220D118D6D50700DB34EF /* OpenVoiceTests */,
 				F74220AB18D6D50700DB34EF /* Frameworks */,
 				F74220AA18D6D50700DB34EF /* Products */,
 			);
@@ -193,7 +215,6 @@
 			isa = PBXGroup;
 			children = (
 				F74220A918D6D50700DB34EF /* OpenVoice.app */,
-				F74220CA18D6D50700DB34EF /* OpenVoiceTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,6 +222,14 @@
 		F74220AB18D6D50700DB34EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F700FC4C18D82ED00025AE51 /* SystemConfiguration.framework */,
+				F700FC4A18D82EC60025AE51 /* Security.framework */,
+				F700FC4818D82EC00025AE51 /* QuartzCore.framework */,
+				F700FC4618D82EBA0025AE51 /* MobileCoreServices.framework */,
+				F700FC4418D82EB40025AE51 /* libz.1.1.3.dylib */,
+				F700FC4218D82EAC0025AE51 /* CoreLocation.framework */,
+				F700FC4018D82E9F0025AE51 /* CFNetwork.framework */,
+				F700FC3E18D82E970025AE51 /* AudioToolbox.framework */,
 				F77B034418D6D8190031B8DB /* MapKit.framework */,
 				F74220AC18D6D50700DB34EF /* Foundation.framework */,
 				F74220AE18D6D50700DB34EF /* CoreGraphics.framework */,
@@ -213,9 +242,13 @@
 		F74220B218D6D50700DB34EF /* OpenVoice */ = {
 			isa = PBXGroup;
 			children = (
-				F74220EB18D6D58600DB34EF /* images */,
+				F77D8BAF18D9ACE6008A314F /* ParsePrivateKey.h */,
 				F74220BB18D6D50700DB34EF /* AppDelegate.h */,
 				F74220BC18D6D50700DB34EF /* AppDelegate.m */,
+				F700FC4E18D82FDF0025AE51 /* OData.h */,
+				F700FC4F18D82FDF0025AE51 /* OData.m */,
+				F700FC3B18D82E4F0025AE51 /* DTParse.h */,
+				F700FC3C18D82E4F0025AE51 /* DTParse.m */,
 				F74220BE18D6D50700DB34EF /* Main.storyboard */,
 				F77B035F18D6E9070031B8DB /* ViewControllers */,
 				F74220C418D6D50700DB34EF /* Images.xcassets */,
@@ -235,24 +268,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F74220D118D6D50700DB34EF /* OpenVoiceTests */ = {
-			isa = PBXGroup;
-			children = (
-				F74220D718D6D50700DB34EF /* OpenVoiceTests.m */,
-				F74220D218D6D50700DB34EF /* Supporting Files */,
-			);
-			path = OpenVoiceTests;
-			sourceTree = "<group>";
-		};
-		F74220D218D6D50700DB34EF /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				F74220D318D6D50700DB34EF /* OpenVoiceTests-Info.plist */,
-				F74220D418D6D50700DB34EF /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		F74220EB18D6D58600DB34EF /* images */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,12 +281,16 @@
 				F74220EE18D6D58600DB34EF /* cat.jpg */,
 				F74220EF18D6D58600DB34EF /* lion.jpg */,
 			);
-			path = images;
+			name = images;
+			path = OpenVoice/images;
 			sourceTree = "<group>";
 		};
 		F77B034618D6E0170031B8DB /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F77D8BA318D9A5A7008A314F /* ParseLogin */,
+				F700FC3918D82E350025AE51 /* Parse.framework */,
+				F700FC3718D82E190025AE51 /* FacebookSDK.framework */,
 				F77B03A518D708D30031B8DB /* elNav */,
 				F77B037A18D708C90031B8DB /* SDWebImage */,
 				F77B037618D6EA000031B8DB /* ExpandableNavigation */,
@@ -319,6 +338,8 @@
 				F77B036518D6E9070031B8DB /* MapViewController.m */,
 				F77B036618D6E9070031B8DB /* ViewController.h */,
 				F77B036718D6E9070031B8DB /* ViewController.m */,
+				F77D8B9B18D953A4008A314F /* WebViewController.h */,
+				F77D8B9C18D953A4008A314F /* WebViewController.m */,
 				F77B03AC18D70F670031B8DB /* SettingsTableViewController.h */,
 				F77B03AD18D70F670031B8DB /* SettingsTableViewController.m */,
 			);
@@ -385,6 +406,20 @@
 			path = elNav;
 			sourceTree = "<group>";
 		};
+		F77D8BA318D9A5A7008A314F /* ParseLogin */ = {
+			isa = PBXGroup;
+			children = (
+				F77D8BA418D9A5B0008A314F /* MyLogInViewController.h */,
+				F77D8BA518D9A5B0008A314F /* MyLogInViewController.m */,
+				F77D8BA618D9A5B0008A314F /* MySignUpViewController.h */,
+				F77D8BA718D9A5B0008A314F /* MySignUpViewController.m */,
+				F77D8BA818D9A5B0008A314F /* SubclassConfigViewController.h */,
+				F77D8BA918D9A5B0008A314F /* SubclassConfigViewController.m */,
+				F77D8BAA18D9A5B0008A314F /* SubclassConfigViewController.xib */,
+			);
+			path = ParseLogin;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -405,24 +440,6 @@
 			productReference = F74220A918D6D50700DB34EF /* OpenVoice.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F74220C918D6D50700DB34EF /* OpenVoiceTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F74220DE18D6D50700DB34EF /* Build configuration list for PBXNativeTarget "OpenVoiceTests" */;
-			buildPhases = (
-				F74220C618D6D50700DB34EF /* Sources */,
-				F74220C718D6D50700DB34EF /* Frameworks */,
-				F74220C818D6D50700DB34EF /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F74220D018D6D50700DB34EF /* PBXTargetDependency */,
-			);
-			name = OpenVoiceTests;
-			productName = OpenVoiceTests;
-			productReference = F74220CA18D6D50700DB34EF /* OpenVoiceTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -431,11 +448,6 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "David Tseng";
-				TargetAttributes = {
-					F74220C918D6D50700DB34EF = {
-						TestTargetID = F74220A818D6D50700DB34EF;
-					};
-				};
 			};
 			buildConfigurationList = F74220A418D6D50700DB34EF /* Build configuration list for PBXProject "OpenVoice" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -451,7 +463,6 @@
 			projectRoot = "";
 			targets = (
 				F74220A818D6D50700DB34EF /* OpenVoice */,
-				F74220C918D6D50700DB34EF /* OpenVoiceTests */,
 			);
 		};
 /* End PBXProject section */
@@ -476,15 +487,8 @@
 				F77B037518D6E9AA0031B8DB /* restaurant17.png in Resources */,
 				F74220F018D6D58600DB34EF /* beaver.jpg in Resources */,
 				F77B035C18D6E81E0031B8DB /* Charts-Mind-map-icon.png in Resources */,
+				F77D8BAE18D9A5B0008A314F /* SubclassConfigViewController.xib in Resources */,
 				F74220C018D6D50700DB34EF /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F74220C818D6D50700DB34EF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F74220D618D6D50700DB34EF /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +502,7 @@
 				F77B03A218D708C90031B8DB /* UIImage+GIF.m in Sources */,
 				F77B034E18D6E0170031B8DB /* DAPageIndicatorView.m in Sources */,
 				F77B03A418D708C90031B8DB /* UIImageView+WebCache.m in Sources */,
+				F700FC3D18D82E4F0025AE51 /* DTParse.m in Sources */,
 				F77B03A018D708C90031B8DB /* SDWebImagePrefetcher.m in Sources */,
 				F77B036818D6E9070031B8DB /* BaseViewController.m in Sources */,
 				F74220BD18D6D50700DB34EF /* AppDelegate.m in Sources */,
@@ -508,15 +513,20 @@
 				F77B03A118D708C90031B8DB /* UIButton+WebCache.m in Sources */,
 				F77B039E18D708C90031B8DB /* SDWebImageDownloaderOperation.m in Sources */,
 				F77B036B18D6E9070031B8DB /* ViewController.m in Sources */,
+				F77D8BAD18D9A5B0008A314F /* SubclassConfigViewController.m in Sources */,
 				F77B039B18D708C90031B8DB /* SDWebImageCompat.m in Sources */,
 				F74220B918D6D50700DB34EF /* main.m in Sources */,
 				F77B03A318D708C90031B8DB /* UIImage+MultiFormat.m in Sources */,
 				F77B036918D6E9070031B8DB /* ListViewController.m in Sources */,
+				F77D8BAB18D9A5B0008A314F /* MyLogInViewController.m in Sources */,
+				F77D8BAC18D9A5B0008A314F /* MySignUpViewController.m in Sources */,
+				F77D8B9D18D953A4008A314F /* WebViewController.m in Sources */,
 				F77B039918D708C90031B8DB /* NSData+GIF.m in Sources */,
 				F77B037918D6EA000031B8DB /* ExpandableNavigation.m in Sources */,
 				F77B039D18D708C90031B8DB /* SDWebImageDownloader.m in Sources */,
 				F77B039C18D708C90031B8DB /* SDWebImageDecoder.m in Sources */,
 				F77B039F18D708C90031B8DB /* SDWebImageManager.m in Sources */,
+				F700FC5018D82FDF0025AE51 /* OData.m in Sources */,
 				F77B03A818D708D30031B8DB /* ELHeaderView.m in Sources */,
 				F77B034F18D6E0170031B8DB /* DAPagesContainer.m in Sources */,
 				F77B036A18D6E9070031B8DB /* MapViewController.m in Sources */,
@@ -524,23 +534,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F74220C618D6D50700DB34EF /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F74220D818D6D50700DB34EF /* OpenVoiceTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F74220D018D6D50700DB34EF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F74220A818D6D50700DB34EF /* OpenVoice */;
-			targetProxy = F74220CF18D6D50700DB34EF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F74220B518D6D50700DB34EF /* InfoPlist.strings */ = {
@@ -557,14 +551,6 @@
 				F74220BF18D6D50700DB34EF /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F74220D418D6D50700DB34EF /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F74220D518D6D50700DB34EF /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -645,6 +631,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenVoice/Tools",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenVoice/OpenVoice-Prefix.pch";
 				INFOPLIST_FILE = "OpenVoice/OpenVoice-Info.plist";
@@ -658,51 +648,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OpenVoice/Tools",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenVoice/OpenVoice-Prefix.pch";
 				INFOPLIST_FILE = "OpenVoice/OpenVoice-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		F74220DF18D6D50700DB34EF /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenVoice.app/OpenVoice";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OpenVoice/OpenVoice-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "OpenVoiceTests/OpenVoiceTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		F74220E018D6D50700DB34EF /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/OpenVoice.app/OpenVoice";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OpenVoice/OpenVoice-Prefix.pch";
-				INFOPLIST_FILE = "OpenVoiceTests/OpenVoiceTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -723,15 +677,6 @@
 			buildConfigurations = (
 				F74220DC18D6D50700DB34EF /* Debug */,
 				F74220DD18D6D50700DB34EF /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F74220DE18D6D50700DB34EF /* Build configuration list for PBXNativeTarget "OpenVoiceTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F74220DF18D6D50700DB34EF /* Debug */,
-				F74220E018D6D50700DB34EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

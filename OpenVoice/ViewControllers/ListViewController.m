@@ -11,7 +11,7 @@
 @interface ListViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, weak) ELHeaderView *headerView;
-
+@property (nonatomic, strong) NSArray* demoContext;
 
 @end
 
@@ -43,25 +43,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    ELHeaderView *headerView = [[ELHeaderView alloc] initWithFrame:CGRectMake(0, 0, 320, 150)backGroudImageURL:@"http://img3.douban.com/view/photo/photo/public/p2162936775.jpg" headerImageURL:@"http://cdn1.techbang.com.tw/system/images/131770/original/7885e4884b1d15c67c04778d1311e5de.png?1377163177" title:@"App Store" subTitle:@"Purchase what you want"];
-    headerView.viewController = self;
-    headerView.scrollView = self.tableView;
-    [self.view addSubview:headerView];
-    _headerView = headerView;
+//    ELHeaderView *headerView = [[ELHeaderView alloc] initWithFrame:CGRectMake(0, 0, 320, 150)backGroudImageURL:@"http://img3.douban.com/view/photo/photo/public/p2162936775.jpg" headerImageURL:@"http://cdn1.techbang.com.tw/system/images/131770/original/7885e4884b1d15c67c04778d1311e5de.png?1377163177" title:@"App Store" subTitle:@"Purchase what you want"];
+//    headerView.viewController = self;
+//    headerView.scrollView = self.tableView;
+//    [self.view addSubview:headerView];
+//    _headerView = headerView;
 	// Do any additional setup after loading the view, typically from a nib.
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"ELViewControllerCellIdentifier"];
+    
+    self.demoContext = @[@"小心地滑！",@"老太太需要幫忙",@"這裡有特賣會！",@"有小偷",@"路不平",@"幫買個玉蘭花吧",@"這適合拍照！"];
+    
     self.tableView.delegate = self;
 }
 
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 15;
+    return 6;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ELViewControllerCellIdentifier" forIndexPath:indexPath];
     
-    [cell.textLabel setText:@"text Label"];
+    [cell.textLabel setText:[self.demoContext objectAtIndex:indexPath.row]];
     return cell;
 }
 
