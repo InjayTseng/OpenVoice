@@ -8,6 +8,8 @@
 
 #import "BaseViewController.h"
 #import "JASidePanelController.h"
+
+
 @interface BaseViewController ()
 
 @end
@@ -32,8 +34,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showCenter) name:@"showCenter" object:nil];
 //    self.navigationItem.title = @"冰淇淋在哪裡";
 	// Do any additional setup after loading the view.
+}
+
+-(void)showCenter{
+    
+    [self showCenterPanelAnimated:YES];
+
 }
 
 - (void)didReceiveMemoryWarning

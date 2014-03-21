@@ -8,6 +8,7 @@
 
 #import "ListViewController.h"
 #import "ELHeaderView.h"
+#include "MessageCell.h"
 @interface ListViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, weak) ELHeaderView *headerView;
@@ -55,17 +56,42 @@
     
     self.tableView.delegate = self;
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
 
+    return 80.;
+}
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 6;
+    return self.demoContext.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ELViewControllerCellIdentifier" forIndexPath:indexPath];
+
+    NSString *CellIdentifier = @"MessageCell";
     
-    [cell.textLabel setText:[self.demoContext objectAtIndex:indexPath.row]];
+    
+    MessageCell *cell = (MessageCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"MessageCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    NSString *ms = [self.demoContext objectAtIndex:indexPath.row];
+    cell.lbTitle.text = ms;
     return cell;
+}
+- (void)tableView: (UITableView*)tableView willDisplayCell: (UITableViewCell*)cell forRowAtIndexPath: (NSIndexPath*)indexPath{
+    
+    //Dynamic Color
+    int n = indexPath.row+1;
+    CGFloat blue_delta = 255/self.demoContext.count;
+    
+    cell.backgroundColor = [UIColor colorWithRed:(55.)/255. green:(147)/255. blue:(blue_delta)*n/255. alpha:1.];
+    
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
 }
 
 - (void)didReceiveMemoryWarning

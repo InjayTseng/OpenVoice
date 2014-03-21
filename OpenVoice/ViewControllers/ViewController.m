@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "DAPagesContainer.h"
 #import "WebViewController.h"
-
+#import "PersonInfoViewController.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) DAPagesContainer *pagesContainer;
@@ -22,6 +22,8 @@
 {
     [super viewDidLoad];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(toWeatherWebPage) name:@"toWeatherWebPage" object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushNewPage) name:@"PushCenterView" object:nil];
     
     self.navigationItem.title = @"OpenVoice";
     self.pagesContainer = [[DAPagesContainer alloc] init];
@@ -41,6 +43,15 @@
 
     
 }
+
+-(void)pushNewPage{
+
+    PersonInfoViewController *pv = [self.storyboard instantiateViewControllerWithIdentifier:@"PersonInfoViewController"];
+    [self.navigationController pushViewController:pv animated:YES];
+    
+    
+}
+
 
 -(void)toWeatherWebPage{
     

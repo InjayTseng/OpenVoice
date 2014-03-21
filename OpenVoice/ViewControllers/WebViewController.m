@@ -26,7 +26,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-
+    self.title = @"即時天氣";
     self.wbView.delegate = self;
     [self.wbView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:self.urlText]]];
     

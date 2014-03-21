@@ -78,7 +78,7 @@
         [self zoomAtMyLocation];
         
     } withFailure:^(NSError *err) {
-       
+       [self setPinsForDemo];
     }];
     // Do any additional setup after loading the view.
 }

@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C9FF12818DBE6FD0057DF66 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C9FF12718DBE6FD0057DF66 /* StoreKit.framework */; };
+		0C9FF12C18DBE8320057DF66 /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FF12A18DBE8320057DF66 /* MessageCell.m */; };
+		0C9FF12D18DBE8320057DF66 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FF12B18DBE8320057DF66 /* MessageCell.xib */; };
+		0C9FF12F18DBE84F0057DF66 /* w_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FF12E18DBE84F0057DF66 /* w_bubble.png */; };
+		0C9FF13118DBE9AA0057DF66 /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FF13018DBE9AA0057DF66 /* white.png */; };
+		0C9FF13618DBEB420057DF66 /* injay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FF13518DBEB420057DF66 /* injay.jpg */; };
+		0C9FF13A18DBEC190057DF66 /* GBPathImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FF13918DBEC190057DF66 /* GBPathImageView.m */; };
+		0C9FF13D18DBEFE00057DF66 /* PersonInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C9FF13C18DBEFE00057DF66 /* PersonInfoViewController.m */; };
+		0C9FF14118DBF42A0057DF66 /* 9-texture_7199_by_californiaclipper-d2yzvgm.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0C9FF14018DBF42A0057DF66 /* 9-texture_7199_by_californiaclipper-d2yzvgm.jpg */; };
 		F700FC3818D82E190025AE51 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F700FC3718D82E190025AE51 /* FacebookSDK.framework */; };
 		F700FC3A18D82E350025AE51 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F700FC3918D82E350025AE51 /* Parse.framework */; };
 		F700FC3D18D82E4F0025AE51 /* DTParse.m in Sources */ = {isa = PBXBuildFile; fileRef = F700FC3C18D82E4F0025AE51 /* DTParse.m */; };
@@ -73,6 +82,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C9FF12718DBE6FD0057DF66 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0C9FF12918DBE8320057DF66 /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		0C9FF12A18DBE8320057DF66 /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
+		0C9FF12B18DBE8320057DF66 /* MessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		0C9FF12E18DBE84F0057DF66 /* w_bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = w_bubble.png; sourceTree = "<group>"; };
+		0C9FF13018DBE9AA0057DF66 /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = white.png; sourceTree = "<group>"; };
+		0C9FF13518DBEB420057DF66 /* injay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = injay.jpg; sourceTree = "<group>"; };
+		0C9FF13818DBEC190057DF66 /* GBPathImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GBPathImageView.h; sourceTree = "<group>"; };
+		0C9FF13918DBEC190057DF66 /* GBPathImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GBPathImageView.m; sourceTree = "<group>"; };
+		0C9FF13B18DBEFE00057DF66 /* PersonInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonInfoViewController.h; sourceTree = "<group>"; };
+		0C9FF13C18DBEFE00057DF66 /* PersonInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonInfoViewController.m; sourceTree = "<group>"; };
+		0C9FF14018DBF42A0057DF66 /* 9-texture_7199_by_californiaclipper-d2yzvgm.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "9-texture_7199_by_californiaclipper-d2yzvgm.jpg"; sourceTree = "<group>"; };
 		F700FC3718D82E190025AE51 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		F700FC3918D82E350025AE51 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		F700FC3B18D82E4F0025AE51 /* DTParse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTParse.h; sourceTree = "<group>"; };
@@ -180,6 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C9FF12818DBE6FD0057DF66 /* StoreKit.framework in Frameworks */,
 				F700FC4D18D82ED00025AE51 /* SystemConfiguration.framework in Frameworks */,
 				F700FC4B18D82EC60025AE51 /* Security.framework in Frameworks */,
 				F700FC4918D82EC00025AE51 /* QuartzCore.framework in Frameworks */,
@@ -200,6 +222,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C9FF13718DBEC190057DF66 /* GBPathImageView */ = {
+			isa = PBXGroup;
+			children = (
+				0C9FF13818DBEC190057DF66 /* GBPathImageView.h */,
+				0C9FF13918DBEC190057DF66 /* GBPathImageView.m */,
+			);
+			path = GBPathImageView;
+			sourceTree = "<group>";
+		};
 		F74220A018D6D50700DB34EF = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +253,7 @@
 		F74220AB18D6D50700DB34EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0C9FF12718DBE6FD0057DF66 /* StoreKit.framework */,
 				F700FC4C18D82ED00025AE51 /* SystemConfiguration.framework */,
 				F700FC4A18D82EC60025AE51 /* Security.framework */,
 				F700FC4818D82EC00025AE51 /* QuartzCore.framework */,
@@ -288,6 +320,7 @@
 		F77B034618D6E0170031B8DB /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				0C9FF13718DBEC190057DF66 /* GBPathImageView */,
 				F77D8BA318D9A5A7008A314F /* ParseLogin */,
 				F700FC3918D82E350025AE51 /* Parse.framework */,
 				F700FC3718D82E190025AE51 /* FacebookSDK.framework */,
@@ -330,6 +363,13 @@
 		F77B035F18D6E9070031B8DB /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				0C9FF14018DBF42A0057DF66 /* 9-texture_7199_by_californiaclipper-d2yzvgm.jpg */,
+				0C9FF13518DBEB420057DF66 /* injay.jpg */,
+				0C9FF13018DBE9AA0057DF66 /* white.png */,
+				0C9FF12E18DBE84F0057DF66 /* w_bubble.png */,
+				0C9FF12918DBE8320057DF66 /* MessageCell.h */,
+				0C9FF12A18DBE8320057DF66 /* MessageCell.m */,
+				0C9FF12B18DBE8320057DF66 /* MessageCell.xib */,
 				F77B036018D6E9070031B8DB /* BaseViewController.h */,
 				F77B036118D6E9070031B8DB /* BaseViewController.m */,
 				F77B036218D6E9070031B8DB /* ListViewController.h */,
@@ -342,6 +382,8 @@
 				F77D8B9C18D953A4008A314F /* WebViewController.m */,
 				F77B03AC18D70F670031B8DB /* SettingsTableViewController.h */,
 				F77B03AD18D70F670031B8DB /* SettingsTableViewController.m */,
+				0C9FF13B18DBEFE00057DF66 /* PersonInfoViewController.h */,
+				0C9FF13C18DBEFE00057DF66 /* PersonInfoViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -474,17 +516,22 @@
 			files = (
 				F77B035E18D6E8A40031B8DB /* maps.jpeg in Resources */,
 				F74220F218D6D58600DB34EF /* cat.jpg in Resources */,
+				0C9FF12F18DBE84F0057DF66 /* w_bubble.png in Resources */,
 				F77B037318D6E9AA0031B8DB /* cursor6.png in Resources */,
 				F74220F318D6D58600DB34EF /* lion.jpg in Resources */,
+				0C9FF13118DBE9AA0057DF66 /* white.png in Resources */,
 				F74220C518D6D50700DB34EF /* Images.xcassets in Resources */,
 				F77B037418D6E9AA0031B8DB /* menues.png in Resources */,
+				0C9FF13618DBEB420057DF66 /* injay.jpg in Resources */,
 				F77B039818D708C90031B8DB /* README.md in Resources */,
+				0C9FF14118DBF42A0057DF66 /* 9-texture_7199_by_californiaclipper-d2yzvgm.jpg in Resources */,
 				F74220B718D6D50700DB34EF /* InfoPlist.strings in Resources */,
 				F74220F118D6D58600DB34EF /* buckDeer.jpg in Resources */,
 				F77B037218D6E9AA0031B8DB /* city8.png in Resources */,
 				F77B039718D708C90031B8DB /* LICENSE in Resources */,
 				F77B037118D6E9AA0031B8DB /* _listIcon.png in Resources */,
 				F77B037518D6E9AA0031B8DB /* restaurant17.png in Resources */,
+				0C9FF12D18DBE8320057DF66 /* MessageCell.xib in Resources */,
 				F74220F018D6D58600DB34EF /* beaver.jpg in Resources */,
 				F77B035C18D6E81E0031B8DB /* Charts-Mind-map-icon.png in Resources */,
 				F77D8BAE18D9A5B0008A314F /* SubclassConfigViewController.xib in Resources */,
@@ -519,7 +566,9 @@
 				F77B03A318D708C90031B8DB /* UIImage+MultiFormat.m in Sources */,
 				F77B036918D6E9070031B8DB /* ListViewController.m in Sources */,
 				F77D8BAB18D9A5B0008A314F /* MyLogInViewController.m in Sources */,
+				0C9FF13A18DBEC190057DF66 /* GBPathImageView.m in Sources */,
 				F77D8BAC18D9A5B0008A314F /* MySignUpViewController.m in Sources */,
+				0C9FF13D18DBEFE00057DF66 /* PersonInfoViewController.m in Sources */,
 				F77D8B9D18D953A4008A314F /* WebViewController.m in Sources */,
 				F77B039918D708C90031B8DB /* NSData+GIF.m in Sources */,
 				F77B037918D6EA000031B8DB /* ExpandableNavigation.m in Sources */,
@@ -529,6 +578,7 @@
 				F700FC5018D82FDF0025AE51 /* OData.m in Sources */,
 				F77B03A818D708D30031B8DB /* ELHeaderView.m in Sources */,
 				F77B034F18D6E0170031B8DB /* DAPagesContainer.m in Sources */,
+				0C9FF12C18DBE8320057DF66 /* MessageCell.m in Sources */,
 				F77B036A18D6E9070031B8DB /* MapViewController.m in Sources */,
 				F77B039A18D708C90031B8DB /* SDImageCache.m in Sources */,
 			);
@@ -638,6 +688,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenVoice/OpenVoice-Prefix.pch";
 				INFOPLIST_FILE = "OpenVoice/OpenVoice-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -655,6 +706,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OpenVoice/OpenVoice-Prefix.pch";
 				INFOPLIST_FILE = "OpenVoice/OpenVoice-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

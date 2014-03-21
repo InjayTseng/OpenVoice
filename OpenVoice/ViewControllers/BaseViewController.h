@@ -7,7 +7,7 @@
 //
 
 #import "JASidePanelController.h"
-
+#define showCenter() [[NSNotificationCenter defaultCenter]postNotificationName:@"showCenter" object:nil];
 @interface BaseViewController : JASidePanelController
 
 @end
