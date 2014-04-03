@@ -7,7 +7,9 @@
 //
 
 #import "JASidePanelController.h"
+
 #define showCenter() [[NSNotificationCenter defaultCenter]postNotificationName:@"showCenter" object:nil];
+#define logout() [[NSNotificationCenter defaultCenter]postNotificationName:@"logout" object:nil];
 @interface BaseViewController : JASidePanelController
 
 @end

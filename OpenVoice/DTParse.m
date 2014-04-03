@@ -257,8 +257,38 @@
                                     }
                                 }];
     
-
-
 }
+
++(void)getVoiceByLocation:(CLLocationCoordinate2D)loc success:(XOBJARRAYBLOCK)success withFailure:(XERRORBLOCK)failure{
+    
+    PFGeoPoint *gp = [PFGeoPoint geoPointWithLatitude:loc.latitude longitude:loc.longitude];
+    [PFCloud callFunctionInBackground:@"getVoiceByLocation"
+                       withParameters:@{@"location":gp}
+                                block:^(NSArray *result, NSError *error) {
+                                    if (!error){
+                                        success(result);
+                                    }else{
+                                        failure(error);
+                                    }
+                                }];
+    
+}
+
++(void)createVoiceByLocation:(CLLocationCoordinate2D)loc message:(NSString*)message success:(XOBJARRAYBLOCK)success withFailure:(XERRORBLOCK)failure{
+    
+    PFGeoPoint *gp = [PFGeoPoint geoPointWithLatitude:loc.latitude longitude:loc.longitude];
+    [PFCloud callFunctionInBackground:@"createVoice"
+                       withParameters:@{@"location":gp,@"message":message}
+                                block:^(NSArray *result, NSError *error) {
+                                    if (!error){
+                                        success(result);
+                                    }else{
+                                        failure(error);
+                                    }
+                                }];
+    
+}
+
+
 
 @end

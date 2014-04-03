@@ -15,5 +15,6 @@
 
 + (instancetype)sharedManager;
 - (CLLocationCoordinate2D)myLocation;
++ (NSString*)stringFromTagNumber:(NSString*)tagNumber;
 
 @end

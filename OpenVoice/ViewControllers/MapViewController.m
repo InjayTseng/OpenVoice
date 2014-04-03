@@ -10,6 +10,7 @@
 #import "MapViewController.h"
 #import "ExpandableNavigation.h"
 #import "WebViewController.h"
+#import "Voice.h"
 #define DEFAULT_LAT 25.032609
 #define DEFAULT_LON 121.558727
 #define TAG_LBTEXT 111
@@ -68,18 +69,44 @@
     [self setbuttonShadow:self.btnNavigation];
     [self setbuttonShadow:self.btnWeatherOne];
     [self setbuttonShadow:self.btnWeatherTwo];
-    
     navigation = [[ExpandableNavigation alloc] initWithMenuItems:buttons mainButton:self.btnMore radius:60.];
     
+    /*
+    [DTParse createVoiceByLocation:[[OData sharedManager] myLocation] message:@"Test From iPhone2" success:^(NSArray *objectArray) {
+       
+        NSLog(@"success %@",objectArray);
+    } withFailure:^(NSError *err) {
+        NSLog(@"%@",err);
+    }];
+    */
+    
+    /*
+     [DTParse getVoiceByLocation:[[OData sharedManager] myLocation] success:^(NSArray *objectArray) {
+       
+        for (id object in objectArray){
+            
+            Voice *vc = [[Voice alloc] initWithPFObject:object];
+            NSLog(@"%@,%@,%f,%f",vc.message,vc.tag,vc.location.latitude,vc.location.longitude);
+        }
+        
+    } withFailure:^(NSError *err) {
+        
+        NSLog(@"%@",err);
+       
+    }];
+    */
+    
+    /*
     [DTParse shopByLocation:[[OData sharedManager] myLocation] andRange:1. WithSuccess:^(NSArray *objectArray) {
        
-        //[self setPinsWithArray:objectArray];
-        [self setPinsForDemo];
-        [self zoomAtMyLocation];
+        [self setPinsWithArray:objectArray];
+        //[self setPinsForDemo];
+        //[self zoomAtMyLocation];
         
     } withFailure:^(NSError *err) {
        [self setPinsForDemo];
     }];
+     */
     // Do any additional setup after loading the view.
 }
 

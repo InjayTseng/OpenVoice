@@ -17,8 +17,11 @@
                   clientKey:parseClientKey];
     [PFFacebookUtils initializeFacebook];
     // Override point for customization after application launch.
-    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:39./255. green:197/255. blue:103./255. alpha:0.9]];
-    [[UIBarButtonItem appearance] setTintColor:[UIColor orangeColor]];
+    //[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:39./255. green:197/255. blue:103./255. alpha:0.9]];
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:255./255. green:255./255. blue:255./255. alpha:0.7]];
+
+    [[UIBarButtonItem appearance] setTintColor:[UIColor darkGrayColor]];
     
     /*
     for (id obj in [UIFont familyNames]){
@@ -27,12 +30,12 @@
     */
     
     NSShadow *shadow = [[NSShadow alloc] init];
-    shadow.shadowColor = [UIColor darkGrayColor];
-    shadow.shadowOffset = CGSizeMake(1, 1);
+    shadow.shadowColor = [UIColor colorWithRed:39./255. green:197/255. blue:103./255. alpha:1.0];
+    shadow.shadowOffset = CGSizeMake(0, 0);
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
-                                                           [UIColor whiteColor], NSForegroundColorAttributeName,
+                                                           [UIColor darkGrayColor], NSForegroundColorAttributeName,
                                                            shadow, NSShadowAttributeName,
-                                                           [UIFont fontWithName:@"Futura" size:30.], NSFontAttributeName, nil]];
+                                                           [UIFont fontWithName:@"Futura" size:28.], NSFontAttributeName, nil]];
     
     
     return YES;

@@ -30,6 +30,7 @@
 				<string>fb711466758875731</string>
 			</array>
 		</dict>
+		<dict/>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
@@ -42,6 +43,10 @@
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
+	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Climacons.ttf</string>
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>

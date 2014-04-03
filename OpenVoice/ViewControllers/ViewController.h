@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MHTabBarController.h"
 #define OpenWeatherPage() [[NSNotificationCenter defaultCenter] postNotificationName:@"toWeatherWebPage" object:nil]
-
+#define Push(viewController) [[NSNotificationCenter defaultCenter] postNotificationName:@"pushViewController" object:viewController]
 @interface ViewController : UIViewController
 
 @end

@@ -25,7 +25,16 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushNewPage) name:@"PushCenterView" object:nil];
     
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pushViewController:) name:@"pushViewController" object:nil];
+    
     self.navigationItem.title = @"OpenVoice";
+    UIImage *image = [UIImage imageNamed: @"openvoice1.png"];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage: image];
+    [imageView setFrame:CGRectMake(0, 0, 150, 44)];
+    imageView.backgroundColor = [UIColor clearColor];
+    imageView.contentMode = UIViewContentModeTop;
+    self.navigationItem.titleView = imageView;
+    
     self.pagesContainer = [[DAPagesContainer alloc] init];
     [self.pagesContainer willMoveToParentViewController:self];
     self.pagesContainer.view.frame = self.view.bounds;
@@ -34,13 +43,45 @@
     [self.pagesContainer didMoveToParentViewController:self];
     
     UIViewController *listViewController =  [self.storyboard instantiateViewControllerWithIdentifier:@"ListViewController"];
-    listViewController.title = @"列表模式";
+    listViewController.title = @"時間模式";
     
     UIViewController *mapViewController =  [self.storyboard instantiateViewControllerWithIdentifier:@"MapViewController"];
     mapViewController.title = @"地圖模式";
     
-    self.pagesContainer.viewControllers = @[mapViewController,listViewController];
+    
+    UIViewController *anvViewController =  [self.storyboard instantiateViewControllerWithIdentifier:@"ANViewController"];
+    anvViewController.title = @"附近資訊";
+    
+    UIViewController *settings =  [self.storyboard instantiateViewControllerWithIdentifier:@"SettingsTableViewController"];
+    settings.title = @"設定";
+    
+    self.pagesContainer.viewControllers = @[settings,anvViewController,mapViewController,listViewController];
+    self.pagesContainer.selectedIndex = 1;
+    
+    [self initRightBarButton];
+    
+    
+}
 
+-(void)initRightBarButton{
+    
+    UIImage* image3 = [UIImage imageNamed:@"reload_blue.png"];
+    CGRect frameimg = CGRectMake(100, 100,30,30);
+    UIButton *someButton = [[UIButton alloc] initWithFrame:frameimg];
+    [someButton setBackgroundImage:image3 forState:UIControlStateNormal];
+    [someButton addTarget:self action:@selector(reFreshDataFromServer)
+              forControlEvents:UIControlEventTouchUpInside];
+    [someButton setShowsTouchWhenHighlighted:YES];
+    
+    UIBarButtonItem *mailbutton =[[UIBarButtonItem alloc] initWithCustomView:someButton];
+    self.navigationItem.rightBarButtonItem=mailbutton;
+}
+
+-(void)pushViewController:(NSNotification*)notif{
+
+    UIViewController* vw = notif.object;
+
+    [self.navigationController pushViewController:vw animated:YES];
     
 }
 

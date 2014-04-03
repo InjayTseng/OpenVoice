@@ -62,13 +62,10 @@ typedef void(^XUSERBLOCK)(PFUser *user);
 
 
 //API from Cloud Function
-
 +(void)shopByLocation:(CLLocationCoordinate2D)loc andRange:(double)range
           WithSuccess:(XOBJARRAYBLOCK)success withFailure:(XERRORBLOCK)failure;
-
-
-
-
++(void)getVoiceByLocation:(CLLocationCoordinate2D)loc success:(XOBJARRAYBLOCK)success withFailure:(XERRORBLOCK)failure;
++(void)createVoiceByLocation:(CLLocationCoordinate2D)loc message:(NSString*)message success:(XOBJARRAYBLOCK)success withFailure:(XERRORBLOCK)failure;
 
 
 

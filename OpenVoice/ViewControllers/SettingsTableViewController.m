@@ -9,6 +9,7 @@
 #import "SettingsTableViewController.h"
 #import "BaseViewController.h"
 #define PERSONAL_INFO 9001
+#define LOGOUT_TAG 9099
 @interface SettingsTableViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @end
@@ -118,13 +119,15 @@
 */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-
-        
     UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:indexPath];
     if (cell.tag == PERSONAL_INFO) {
         NSLog(@"GO");
         [[NSNotificationCenter defaultCenter]postNotificationName:@"PushCenterView" object:@PERSONAL_INFO];
         showCenter();
+    }
+    else if (cell.tag == LOGOUT_TAG){
+        showCenter();
+        logout();
     }
 }
 @end

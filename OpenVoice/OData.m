@@ -40,4 +40,25 @@ return _sharedObject;
     return self.locationManager.location.coordinate;
 }
 
++ (NSString*)stringFromTagNumber:(NSString*)tagNumber{
+
+
+    
+    NSDictionary *dic = @{@"1": @"注意",
+                          @"2":@"食",
+                          @"3":@"住",
+                          @"4":@"人",
+                          @"5":@"事",
+                          @"6":@"好玩",
+                          @"7":@"有趣",
+                          @"8":@"注意",
+                          @"9":@"注意",
+                          @"10":@"測試"};
+    
+    
+    
+    return dic[tagNumber];
+}
+
+
 @end

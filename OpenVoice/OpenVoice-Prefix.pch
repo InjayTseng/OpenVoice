@@ -15,5 +15,10 @@
     #import <Foundation/Foundation.h>
     #import "OData.h"
     #import "DTParse.h"
-
+    #import "Voice.h"
+    #import <MobileCoreServices/MobileCoreServices.h>
+    #import <CoreLocation/CoreLocation.h>
+    #import <MapKit/MapKit.h>
+    #import "CZDebug.h"
+    #import "Climacons.h"
 #endif
