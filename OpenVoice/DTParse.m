@@ -289,6 +289,30 @@
     
 }
 
++(void)addPopularityOnVoice:(NSString*)objectID success:(XOBJARRAYBLOCK)success withFailure:(XERRORBLOCK)failure{
 
+
+    [PFCloud callFunctionInBackground:@"addPopularityOnVoice"
+                       withParameters:@{@"objectId":objectID}
+                                block:^(NSArray *result, NSError *error) {
+                                    if (!error){
+                                        success(result);
+                                    }else{
+                                        failure(error);
+                                    }
+                                }];
+    
+}
++(void)getTagListSuccess:(XOBJARRAYBLOCK)success withFailure:(XERRORBLOCK)failure{
+    [PFCloud callFunctionInBackground:@"getTagList"
+                       withParameters:@{}
+                                block:^(NSArray *result, NSError *error) {
+                                    if (!error){
+                                        success(result);
+                                    }else{
+                                        failure(error);
+                                    }
+                                }];
+}
 
 @end

@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Voice : NSObject
+@property (nonatomic,strong) NSString* objectID;
 @property (nonatomic,strong) NSString* message;
 @property (nonatomic,strong) NSNumber* tag;
 @property (nonatomic,readwrite) CLLocationCoordinate2D location;

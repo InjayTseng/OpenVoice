@@ -23,6 +23,7 @@
 
     [[UIBarButtonItem appearance] setTintColor:[UIColor darkGrayColor]];
     
+    [[UITabBar appearance] setSelectedImageTintColor:[UIColor darkGrayColor]];
     /*
     for (id obj in [UIFont familyNames]){
         NSLog(@"%@",obj);

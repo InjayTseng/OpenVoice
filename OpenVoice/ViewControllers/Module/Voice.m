@@ -15,6 +15,7 @@
     self = [super init];
     if (self) {
         PFObject* parseObject = object;
+        self.objectID = [parseObject valueForKey:@"objectId"];
         self.tag =[parseObject valueForKey:@"tagNumber"];
         self.message =[parseObject valueForKey:@"message"];
         PFGeoPoint * gp = [object valueForKey:@"location"];

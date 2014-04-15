@@ -456,7 +456,9 @@
 
     VoiceDetailViewController *vw = [self.storyboard instantiateViewControllerWithIdentifier:@"VoiceDetailViewController"];
     [vw setCurrentVoice:[self.voiceArray objectAtIndex:indexPath.row]];
-    Push(vw);
+    [self.navigationController pushViewController:vw
+                                         animated:YES];
+//    Push(vw);
     NSLog(@"%d",indexPath.row);
 }
 

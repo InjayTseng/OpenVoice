@@ -71,6 +71,20 @@
     [self setbuttonShadow:self.btnWeatherTwo];
     navigation = [[ExpandableNavigation alloc] initWithMenuItems:buttons mainButton:self.btnMore radius:60.];
     
+    [DTParse getTagListSuccess:^(NSArray *objectArray) {
+       
+//         NSLog(@"%@",objectArray);
+        for (id obj in objectArray){
+        
+            NSLog(@"%@",[obj valueForKey:@"tagName"]);
+        
+        }
+        
+        
+    } withFailure:^(NSError *err) {
+       
+    }];
+
     /*
     [DTParse createVoiceByLocation:[[OData sharedManager] myLocation] message:@"Test From iPhone2" success:^(NSArray *objectArray) {
        
@@ -80,13 +94,26 @@
     }];
     */
     
-    /*
+    
      [DTParse getVoiceByLocation:[[OData sharedManager] myLocation] success:^(NSArray *objectArray) {
        
         for (id object in objectArray){
             
             Voice *vc = [[Voice alloc] initWithPFObject:object];
             NSLog(@"%@,%@,%f,%f",vc.message,vc.tag,vc.location.latitude,vc.location.longitude);
+            
+            
+            [DTParse addPopularityOnVoice:vc.objectID success:^(NSArray *objectArray) {
+                
+                NSLog(@"s %@",objectArray);
+                
+            } withFailure:^(NSError *err) {
+                
+                NSLog(@"f");
+                
+            }];
+            
+            
         }
         
     } withFailure:^(NSError *err) {
@@ -94,7 +121,7 @@
         NSLog(@"%@",err);
        
     }];
-    */
+    
     
     /*
     [DTParse shopByLocation:[[OData sharedManager] myLocation] andRange:1. WithSuccess:^(NSArray *objectArray) {

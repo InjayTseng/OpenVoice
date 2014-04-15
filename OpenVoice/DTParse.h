@@ -67,6 +67,11 @@ typedef void(^XUSERBLOCK)(PFUser *user);
 +(void)getVoiceByLocation:(CLLocationCoordinate2D)loc success:(XOBJARRAYBLOCK)success withFailure:(XERRORBLOCK)failure;
 +(void)createVoiceByLocation:(CLLocationCoordinate2D)loc message:(NSString*)message success:(XOBJARRAYBLOCK)success withFailure:(XERRORBLOCK)failure;
 
++(void)addPopularityOnVoice:(NSString*)objectID success:(XOBJARRAYBLOCK)success withFailure:(XERRORBLOCK)failure;
+
+
++(void)getTagListSuccess:(XOBJARRAYBLOCK)success withFailure:(XERRORBLOCK)failure;
+
 
 
 @end
